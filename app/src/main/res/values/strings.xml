@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Base Module</string>
+    <string name="app_name" translatable="false">Sehentak - Base Module</string>
+    <string name="label_history_empty" translatable="false">No release history</string>
+    <string name="label_history_error" translatable="false">Server not responding</string>
 </resources>
