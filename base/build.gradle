@@ -14,14 +14,15 @@ android {
 
         consumerProguardFiles 'consumer-rules.pro'
         buildConfigField "String", "KEY_PACKAGE", "\"Sehentak\""
-        buildConfigField "String", "API_ID", "\"APP_ZLHGuLoJOLfyK2FS4muJ\""
-        buildConfigField "String", "API_KEY", "\"p8uEsP9IVCX1MNgcSKst0qs1VWgZeUAxeuDcagpvqBVRrixsKGgZrX5JhMyNBZ1W\""
+        buildConfigField "String", "API_ID", "\"APP_pwmHn2VjoMTyCTJsXCDK\""
+        buildConfigField "String", "API_KEY", "\"6NmnWMHzJ9vktGq2okrhvOKoVyfmaYs3fUUFiMNk6tygNkMCKIOAUKKyWIdY3TtN\""
         buildConfigField "String", "URL_CLOUDFLARE", "\"https://www.cloudflare.com/\""
+        buildConfigField "String", "RELEASE_DATE", "\"${getDate()}\""
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             buildConfigField "Long", "ENV_TIMEOUT_REQUEST", "10L"
@@ -76,4 +77,10 @@ dependencies {
     //rxJava
     api 'io.reactivex.rxjava2:rxandroid:2.1.1'
     api 'io.reactivex.rxjava2:rxkotlin:2.2.0'
+}
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyy-MM-dd HH:mm:ss')
+    return formattedDate
 }
