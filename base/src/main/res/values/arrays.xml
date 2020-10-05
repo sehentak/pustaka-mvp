@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="day_english">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="day_indonesian">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+    </string-array>
+
+    <string-array name="array_network">
+        <item>Unknown</item>
+        <item>GPRS</item>
+        <item>EDGE</item>
+        <item>UMTS</item>
+        <item>CDMA</item>
+        <item>EVDO_0</item>
+        <item>EVDO_A</item>
+        <item>1xRTT</item>
+        <item>HSDPA</item>
+        <item>HSUPA</item>
+        <item>HSPA</item>
+        <item>IDEN</item>
+        <item>EVDO_B</item>
+        <item>LTE</item>
+        <item>EHRPD</item>
+        <item>HSPAP</item>
+        <item>GSM</item>
+        <item>SCDMA</item>
+        <item>IWLAN</item>
+        <item>LTE_CA</item>
+    </string-array>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Sehentak Base MVP</string>
+    <string name="app_dev" translatable="false">Sehentak</string>
+
+    <integer name="prop_extra_code">811</integer>
+    <string name="prop_extra_menu" translatable="false">EXTRA_DEFAULT_MENU</string>
+    <string name="prop_extra_default" translatable="false">EXTRA_DEFAULT_DATA</string>
+
+    <string name="prop_mode_release" translatable="false">release</string>
+    <string name="prop_mode_debug" translatable="false">debug</string>
+    <string name="prop_mode_staging" translatable="false">staging</string>
+
+    <string name="prop_pref_key" translatable="false">PREF_KEY</string>
+    <string name="prop_pref_location" translatable="false">PREF_LOCATION</string>
+    <string name="prop_pref_token" translatable="false">PREF_TOKEN</string>
+    <string name="prop_pref_printer" translatable="false">PREF_PRINTER</string>
+    <string name="prop_pref_store" translatable="false">PREF_STORE</string>
+
+    <string name="prop_enigma_algorithm_aes" translatable="false">AES</string>
+    <string name="prop_enigma_algorithm_md5" translatable="false">MD5</string>
+    <string name="prop_enigma_digest" translatable="false">%1$32x</string>
+    <string name="prop_enigma_padding" translatable="false">AES/CBC/PKCS5Padding</string>
+    <string name="prop_enigma_method_encrypt" translatable="false">encrypt</string>
+    <string name="prop_enigma_method_decrypt" translatable="false">decrypt</string>
+    <integer name="prop_enigma_iv_size">16</integer>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_double">26dp</dimen>
+    <dimen name="margin_triple">36dp</dimen>
+    <dimen name="margin_triple_double">72dp</dimen>
+    <dimen name="margin_divider">10dp</dimen>
+    <dimen name="margin_divider_half">5dp</dimen>
+    <dimen name="margin_radius">4dp</dimen>
+    <dimen name="margin_line">0.5dp</dimen>
+</resources>
