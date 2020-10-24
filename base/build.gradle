@@ -25,9 +25,6 @@ android {
 
     buildTypes {
         release {
-//            minifyEnabled true
-//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-
             buildConfigField "Long", "ENV_TIMEOUT_REQUEST", "10L"
             buildConfigField "Long", "ENV_TIMEOUT_DOWNLOAD", "80L"
             buildConfigField "Long", "ENV_INTERVAL_LOCATION", "5000L"
