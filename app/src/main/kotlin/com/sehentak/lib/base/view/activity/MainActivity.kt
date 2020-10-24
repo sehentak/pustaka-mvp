@@ -3,9 +3,12 @@ package com.sehentak.lib.base.view.activity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.sehentak.base.BuildConfig.*
+import com.sehentak.base.BuildConfig.KEY_PACKAGE
+import com.sehentak.base.BuildConfig.RELEASE_DATE
 import com.sehentak.base.base.BaseActivity
 import com.sehentak.base.helper.Log
+import com.sehentak.lib.base.BuildConfig.VERSION_CODE
+import com.sehentak.lib.base.BuildConfig.VERSION_NAME
 import com.sehentak.lib.base.R
 import com.sehentak.lib.base.model.VersionMdl
 import com.sehentak.lib.base.view.adapter.HistoryAdapter
