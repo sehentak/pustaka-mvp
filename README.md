@@ -1,5 +1,5 @@
 # Pustaka MVP
-Pustaka MVP encompasses a collection of Android libraries that incorporate best practices and provide backwards compatibility in your Android apps.
+Pustaka MVP A set of libraries, tools and guides to help make app building quick and easy.
 
 [![](https://jitpack.io/v/sehentak/pustaka-mvp.svg)](https://jitpack.io/#sehentak/pustaka-mvp)
 
@@ -18,7 +18,7 @@ allprojects {
 **Step 2.** Add the dependency
 ```
 dependencies {
-    implementation 'com.github.sehentak:pustaka-mvp:v1.0.3'
+    implementation 'com.github.sehentak:pustaka-mvp:{{ insert latest version }}'
 }
 ```
 
