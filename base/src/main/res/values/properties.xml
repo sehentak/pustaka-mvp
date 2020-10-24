@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Sehentak Base MVP</string>
+    <string name="app_name" translatable="false">Sehentak Pustaka MVP</string>
     <string name="app_dev" translatable="false">Sehentak</string>
+    <string name="app_person_name" translatable="false">Angger Prasetyo</string>
+    <string name="app_person_email" translatable="false">angger@sehentak.com</string>
 
     <integer name="prop_extra_code">811</integer>
     <string name="prop_extra_menu" translatable="false">EXTRA_DEFAULT_MENU</string>
