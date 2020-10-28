@@ -14,6 +14,8 @@ import com.sehentak.base.BuildConfig
 
 object Log {
 
+    @Volatile var isDebug: Boolean = false
+
     fun debug(tag: String, data: Any?) {
         if (data != null) {
             debug(tag, Gson().toJson(data))
@@ -31,7 +33,7 @@ object Log {
      * @param   message The message you would like logged.
      */
     fun debug(tag: String, message: String?){
-        if (BuildConfig.DEBUG) {
+        if (isDebug) {
             Log.e(BuildConfig.KEY_PACKAGE, "$tag: $message")
         } else Log.i(BuildConfig.KEY_PACKAGE, tag)
     }
@@ -41,7 +43,7 @@ object Log {
     }
 
     fun debug(tag: String, message: String?, e: Exception) {
-        if (BuildConfig.DEBUG) {
+        if (isDebug) {
             Log.e(BuildConfig.KEY_PACKAGE, "$tag:${if (message != null) 
             " $message" else ""} ${e.message}")
             e.printStackTrace()
