@@ -6,6 +6,7 @@ Pustaka MVP A set of libraries, tools and guides to help make app building quick
 ## How To
 
 **Step 1.** Add the JitPack repository to your build file
+
 ```
 allprojects {
     repositories {
@@ -16,6 +17,7 @@ allprojects {
 ```
 
 **Step 2.** Add the dependency
+
 ```
 dependencies {
     implementation 'com.github.sehentak:pustaka-mvp:{{ insert latest version }}'
@@ -24,10 +26,10 @@ dependencies {
 
 ## Library already include
 
-- Kotlin
-- Material design
-- Play services location
-- Retrofit 2
-- Gson
-- Loggin interceptor
-- RxJava 2
+* Kotlin
+* Material design
+* Play services location
+* Retrofit 2
+* Gson
+* Loggin interceptor
+* RxJava 2
