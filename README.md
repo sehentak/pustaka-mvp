@@ -3,7 +3,6 @@ Pustaka MVP A set of libraries, tools and guides to help make app building quick
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a08c42e59d1e414bac59aaec465afdb4)](https://app.codacy.com/gh/sehentak/pustaka-mvp?utm_source=github.com&utm_medium=referral&utm_content=sehentak/pustaka-mvp&utm_campaign=Badge_Grade_Settings)
 [![](https://jitpack.io/v/sehentak/pustaka-mvp.svg)](https://jitpack.io/#sehentak/pustaka-mvp)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7f7f5cab7e9d4b8fa5fa0662a0533024)](https://www.codacy.com/gh/sehentak/pustaka-mvp/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sehentak/pustaka-mvp&amp;utm_campaign=Badge_Grade)
 
 ## How To
 
