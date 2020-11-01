@@ -3,6 +3,7 @@ package com.sehentak.base.helper
 import android.util.Log
 import com.google.gson.Gson
 import com.sehentak.base.BuildConfig
+import com.sehentak.base.Sehentak
 
 /**
  * API for sending log output.
@@ -13,8 +14,6 @@ import com.sehentak.base.BuildConfig
  */
 
 object Log {
-
-    @Volatile var isDebug: Boolean = false
 
     fun debug(tag: String, data: Any?) {
         if (data != null) {
@@ -33,7 +32,7 @@ object Log {
      * @param   message The message you would like logged.
      */
     fun debug(tag: String, message: String?){
-        if (isDebug) {
+        if (Sehentak.isApplicationDebug) {
             Log.e(BuildConfig.KEY_PACKAGE, "$tag: $message")
         } else Log.i(BuildConfig.KEY_PACKAGE, tag)
     }
@@ -43,7 +42,7 @@ object Log {
     }
 
     fun debug(tag: String, message: String?, e: Exception) {
-        if (isDebug) {
+        if (Sehentak.isApplicationDebug) {
             Log.e(BuildConfig.KEY_PACKAGE, "$tag:${if (message != null) 
             " $message" else ""} ${e.message}")
             e.printStackTrace()

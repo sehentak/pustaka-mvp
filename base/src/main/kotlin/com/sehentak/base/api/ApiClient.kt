@@ -2,7 +2,7 @@ package com.sehentak.base.api
 
 import android.annotation.SuppressLint
 import com.sehentak.base.BuildConfig
-import com.sehentak.base.helper.Log
+import com.sehentak.base.Sehentak
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -81,7 +81,7 @@ object ApiClient {
         client.readTimeout(timeOutInSeconds, TimeUnit.SECONDS)
         client.writeTimeout(timeOutInSeconds, TimeUnit.SECONDS)
 
-        if (Log.isDebug) client.addInterceptor(HttpLoggingInterceptor().apply {
+        if (Sehentak.isApplicationDebug) client.addInterceptor(HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
         })
 
@@ -147,7 +147,7 @@ object ApiClient {
         client.readTimeout(BuildConfig.ENV_TIMEOUT_REQUEST, TimeUnit.SECONDS)
         client.writeTimeout(BuildConfig.ENV_TIMEOUT_REQUEST, TimeUnit.SECONDS)
 
-        if (Log.isDebug) client.addInterceptor(HttpLoggingInterceptor().apply {
+        if (Sehentak.isApplicationDebug) client.addInterceptor(HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
         })
 
