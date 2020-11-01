@@ -12,8 +12,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 7
-        versionName "1.2.2"
+        versionCode 8
+        versionName "1.2.3"
 
         consumerProguardFiles 'consumer-rules.pro'
         buildConfigField "String", "KEY_PACKAGE", "\"Sehentak\""
@@ -30,7 +30,6 @@ android {
             buildConfigField "Long", "ENV_INTERVAL_LOCATION", "5000L"
             buildConfigField "String", "API_VERSION", "\"v1\""
             buildConfigField "String", "URL_BASE", "\"https://sehentak.com/api/\" + API_VERSION + \"/\""
-            manifestPlaceholders = [usesCleartextTraffic:"false"]
         }
 
         debug {
@@ -39,7 +38,6 @@ android {
             buildConfigField "Long", "ENV_INTERVAL_LOCATION", "1000L"
             buildConfigField "String", "API_VERSION", "\"v1\""
             buildConfigField "String", "URL_BASE", "\"https://sehentak.com/api/\" + API_VERSION + \"/\""
-            manifestPlaceholders = [usesCleartextTraffic:"true"]
         }
     }
 
