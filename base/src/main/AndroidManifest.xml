@@ -10,11 +10,12 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
+        android:name=".Sehentak"
         android:hardwareAccelerated="true"
         android:largeHeap="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:allowBackup="true"
-        android:usesCleartextTraffic="${usesCleartextTraffic}"/>
+        android:usesCleartextTraffic="true" />
 
 </manifest>
