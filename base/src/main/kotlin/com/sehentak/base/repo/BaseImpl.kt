@@ -3,13 +3,13 @@ package com.sehentak.base.repo
 import android.annotation.SuppressLint
 import android.os.Build
 import android.util.Base64
-import io.reactivex.Observable
 import com.sehentak.base.BuildConfig
 import com.sehentak.base.api.ApiClient
 import com.sehentak.base.api.ApiServices
 import com.sehentak.base.helper.getSerialNumber
 import com.sehentak.base.model.ApplicationMdl
 import com.sehentak.base.model.PlatformMdl
+import io.reactivex.Observable
 import java.util.*
 
 class BaseImpl: BaseReq {
@@ -48,9 +48,13 @@ class BaseImpl: BaseReq {
         }
     }
 
-    @SuppressLint("HardwareIds")
     override fun challenge(appVersion: String, platform: PlatformMdl?): Observable<ApplicationMdl> {
-        val combine = "${Date().time}:${BuildConfig.API_ID}shntk${BuildConfig.API_KEY}"
+        return challenge(BuildConfig.API_ID, BuildConfig.API_KEY, appVersion, platform)
+    }
+
+    @SuppressLint("HardwareIds")
+    override fun challenge(appId: String, appKey: String, appVersion: String, platform: PlatformMdl?): Observable<ApplicationMdl> {
+        val combine = "${Date().time}:${appId}shntk$appKey"
         val bytes = combine.toByteArray()
         var token = Base64.encodeToString(bytes, Base64.DEFAULT)
         token = token.replace("\\s".toRegex(), "")
