@@ -17,8 +17,8 @@ android {
 
         consumerProguardFiles 'consumer-rules.pro'
         buildConfigField "String", "KEY_PACKAGE", "\"Sehentak\""
-        buildConfigField "String", "API_ID", "\"APP_pwmHn2VjoMTyCTJsXCDK\""
-        buildConfigField "String", "API_KEY", "\"6NmnWMHzJ9vktGq2okrhvOKoVyfmaYs3fUUFiMNk6tygNkMCKIOAUKKyWIdY3TtN\""
+        buildConfigField "String", "API_ID", "\"APP_zET1d6BfQv0gIUYz8Gmz\""
+        buildConfigField "String", "API_KEY", "\"6lvCbYl2q08FGho3q03nkNZt6CTr8tTqnwfMCmXBs3xKwJHUrBjXrUeVv3oe3hi8\""
         buildConfigField "String", "URL_CLOUDFLARE", "\"https://www.cloudflare.com/\""
         buildConfigField "String", "RELEASE_DATE", "\"${getDate()}\""
     }
